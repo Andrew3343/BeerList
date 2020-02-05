@@ -8,24 +8,70 @@
 
 /* Begin PBXBuildFile section */
 		493D485723E8C76B00E48662 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493D485623E8C76B00E48662 /* AppDelegate.swift */; };
-		493D485923E8C76B00E48662 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493D485823E8C76B00E48662 /* SceneDelegate.swift */; };
-		493D485B23E8C76B00E48662 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493D485A23E8C76B00E48662 /* ViewController.swift */; };
-		493D485E23E8C76B00E48662 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 493D485C23E8C76B00E48662 /* Main.storyboard */; };
+		493D485B23E8C76B00E48662 /* BeerlistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493D485A23E8C76B00E48662 /* BeerlistViewController.swift */; };
 		493D486123E8C76B00E48662 /* Beerlist.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 493D485F23E8C76B00E48662 /* Beerlist.xcdatamodeld */; };
 		493D486323E8C77000E48662 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 493D486223E8C77000E48662 /* Assets.xcassets */; };
 		493D486623E8C77000E48662 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 493D486423E8C77000E48662 /* LaunchScreen.storyboard */; };
+		493D487C23E8C93100E48662 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493D486F23E8C93100E48662 /* LoaderView.swift */; };
+		493D487D23E8C93100E48662 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493D487123E8C93100E48662 /* Strings.swift */; };
+		493D487E23E8C93100E48662 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493D487223E8C93100E48662 /* Color.swift */; };
+		493D487F23E8C93100E48662 /* UITableViewCell+Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493D487423E8C93100E48662 /* UITableViewCell+Nib.swift */; };
+		493D488023E8C93100E48662 /* UIViewController+StandardError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493D487523E8C93100E48662 /* UIViewController+StandardError.swift */; };
+		493D488223E8C93100E48662 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493D487723E8C93100E48662 /* Storyboard.swift */; };
+		493D488323E8C93100E48662 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493D487823E8C93100E48662 /* String+Extension.swift */; };
+		493D488423E8C93100E48662 /* ViewController+Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493D487923E8C93100E48662 /* ViewController+Storyboard.swift */; };
+		493D488523E8C93100E48662 /* DataInteractable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493D487B23E8C93100E48662 /* DataInteractable.swift */; };
+		493D488723E8E49700E48662 /* Beerlist.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 493D488623E8E49700E48662 /* Beerlist.storyboard */; };
+		493D489123E8E5C800E48662 /* BeerlistLoaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 493D488D23E8E5C800E48662 /* BeerlistLoaderTableViewCell.xib */; };
+		493D489223E8E5C800E48662 /* BeerlistLoaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493D488E23E8E5C800E48662 /* BeerlistLoaderTableViewCell.swift */; };
+		493D489323E8E5C800E48662 /* BeerlistTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 493D488F23E8E5C800E48662 /* BeerlistTableViewCell.xib */; };
+		493D489423E8E5C800E48662 /* BeerlistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493D489023E8E5C800E48662 /* BeerlistTableViewCell.swift */; };
+		493D489623E8E71300E48662 /* BeerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493D489523E8E71300E48662 /* BeerItem.swift */; };
+		493D48A123E8E8CA00E48662 /* ImageLoadingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493D489823E8E8C900E48662 /* ImageLoadingService.swift */; };
+		493D48A223E8E8CA00E48662 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493D489923E8E8C900E48662 /* NetworkManager.swift */; };
+		493D48A323E8E8CA00E48662 /* BeerListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493D489B23E8E8C900E48662 /* BeerListRequest.swift */; };
+		493D48A523E8E8CA00E48662 /* NetworkAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493D489D23E8E8CA00E48662 /* NetworkAPI.swift */; };
+		493D48A723E8E8CA00E48662 /* PunkAPIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493D489F23E8E8CA00E48662 /* PunkAPIEndpoint.swift */; };
+		493D48AA23E8E8E400E48662 /* BeerListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493D48A923E8E8E400E48662 /* BeerListInteractor.swift */; };
+		493D48AC23E8E8F300E48662 /* BeerListWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493D48AB23E8E8F300E48662 /* BeerListWorker.swift */; };
+		493D48AE23E8FB0300E48662 /* ImageSupplyWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493D48AD23E8FB0300E48662 /* ImageSupplyWorker.swift */; };
+		493D48B023E9AE9000E48662 /* URLComponents+QueryItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493D48AF23E9AE9000E48662 /* URLComponents+QueryItems.swift */; };
+		493D48B223EADA1C00E48662 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493D48B123EADA1C00E48662 /* NetworkRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		493D485323E8C76B00E48662 /* Beerlist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beerlist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		493D485623E8C76B00E48662 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		493D485823E8C76B00E48662 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		493D485A23E8C76B00E48662 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		493D485D23E8C76B00E48662 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		493D485A23E8C76B00E48662 /* BeerlistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerlistViewController.swift; sourceTree = "<group>"; };
 		493D486023E8C76B00E48662 /* Beerlist.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Beerlist.xcdatamodel; sourceTree = "<group>"; };
 		493D486223E8C77000E48662 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		493D486523E8C77000E48662 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		493D486723E8C77000E48662 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		493D486F23E8C93100E48662 /* LoaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
+		493D487123E8C93100E48662 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		493D487223E8C93100E48662 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		493D487423E8C93100E48662 /* UITableViewCell+Nib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Nib.swift"; sourceTree = "<group>"; };
+		493D487523E8C93100E48662 /* UIViewController+StandardError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+StandardError.swift"; sourceTree = "<group>"; };
+		493D487723E8C93100E48662 /* Storyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
+		493D487823E8C93100E48662 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		493D487923E8C93100E48662 /* ViewController+Storyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+Storyboard.swift"; sourceTree = "<group>"; };
+		493D487B23E8C93100E48662 /* DataInteractable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataInteractable.swift; sourceTree = "<group>"; };
+		493D488623E8E49700E48662 /* Beerlist.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Beerlist.storyboard; sourceTree = "<group>"; };
+		493D488D23E8E5C800E48662 /* BeerlistLoaderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BeerlistLoaderTableViewCell.xib; sourceTree = "<group>"; };
+		493D488E23E8E5C800E48662 /* BeerlistLoaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerlistLoaderTableViewCell.swift; sourceTree = "<group>"; };
+		493D488F23E8E5C800E48662 /* BeerlistTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BeerlistTableViewCell.xib; sourceTree = "<group>"; };
+		493D489023E8E5C800E48662 /* BeerlistTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerlistTableViewCell.swift; sourceTree = "<group>"; };
+		493D489523E8E71300E48662 /* BeerItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerItem.swift; sourceTree = "<group>"; };
+		493D489823E8E8C900E48662 /* ImageLoadingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoadingService.swift; sourceTree = "<group>"; };
+		493D489923E8E8C900E48662 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		493D489B23E8E8C900E48662 /* BeerListRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerListRequest.swift; sourceTree = "<group>"; };
+		493D489D23E8E8CA00E48662 /* NetworkAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkAPI.swift; sourceTree = "<group>"; };
+		493D489F23E8E8CA00E48662 /* PunkAPIEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PunkAPIEndpoint.swift; sourceTree = "<group>"; };
+		493D48A923E8E8E400E48662 /* BeerListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerListInteractor.swift; sourceTree = "<group>"; };
+		493D48AB23E8E8F300E48662 /* BeerListWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerListWorker.swift; sourceTree = "<group>"; };
+		493D48AD23E8FB0300E48662 /* ImageSupplyWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSupplyWorker.swift; sourceTree = "<group>"; };
+		493D48AF23E9AE9000E48662 /* URLComponents+QueryItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLComponents+QueryItems.swift"; sourceTree = "<group>"; };
+		493D48B123EADA1C00E48662 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +104,135 @@
 		493D485523E8C76B00E48662 /* Beerlist */ = {
 			isa = PBXGroup;
 			children = (
+				493D486D23E8C93100E48662 /* Common */,
+				493D489723E8E8C900E48662 /* Networking */,
 				493D485623E8C76B00E48662 /* AppDelegate.swift */,
-				493D485823E8C76B00E48662 /* SceneDelegate.swift */,
-				493D485A23E8C76B00E48662 /* ViewController.swift */,
-				493D485C23E8C76B00E48662 /* Main.storyboard */,
+				493D488823E8E4C900E48662 /* Beerlist */,
 				493D486223E8C77000E48662 /* Assets.xcassets */,
 				493D486423E8C77000E48662 /* LaunchScreen.storyboard */,
 				493D486723E8C77000E48662 /* Info.plist */,
 				493D485F23E8C76B00E48662 /* Beerlist.xcdatamodeld */,
 			);
 			path = Beerlist;
+			sourceTree = "<group>";
+		};
+		493D486D23E8C93100E48662 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				493D486E23E8C93100E48662 /* UI */,
+				493D487023E8C93100E48662 /* Constants */,
+				493D487323E8C93100E48662 /* Extensions */,
+				493D487A23E8C93100E48662 /* Protocols */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		493D486E23E8C93100E48662 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				493D486F23E8C93100E48662 /* LoaderView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		493D487023E8C93100E48662 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				493D487123E8C93100E48662 /* Strings.swift */,
+				493D487223E8C93100E48662 /* Color.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		493D487323E8C93100E48662 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				493D487423E8C93100E48662 /* UITableViewCell+Nib.swift */,
+				493D487523E8C93100E48662 /* UIViewController+StandardError.swift */,
+				493D487723E8C93100E48662 /* Storyboard.swift */,
+				493D487823E8C93100E48662 /* String+Extension.swift */,
+				493D487923E8C93100E48662 /* ViewController+Storyboard.swift */,
+				493D48AF23E9AE9000E48662 /* URLComponents+QueryItems.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		493D487A23E8C93100E48662 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				493D487B23E8C93100E48662 /* DataInteractable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		493D488823E8E4C900E48662 /* Beerlist */ = {
+			isa = PBXGroup;
+			children = (
+				493D488923E8E4D400E48662 /* UI */,
+				493D488C23E8E50700E48662 /* Data */,
+				493D488B23E8E4F600E48662 /* Networking */,
+				493D488A23E8E4E200E48662 /* BussinessLogic */,
+			);
+			path = Beerlist;
+			sourceTree = "<group>";
+		};
+		493D488923E8E4D400E48662 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				493D488E23E8E5C800E48662 /* BeerlistLoaderTableViewCell.swift */,
+				493D488D23E8E5C800E48662 /* BeerlistLoaderTableViewCell.xib */,
+				493D489023E8E5C800E48662 /* BeerlistTableViewCell.swift */,
+				493D488F23E8E5C800E48662 /* BeerlistTableViewCell.xib */,
+				493D488623E8E49700E48662 /* Beerlist.storyboard */,
+				493D485A23E8C76B00E48662 /* BeerlistViewController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		493D488A23E8E4E200E48662 /* BussinessLogic */ = {
+			isa = PBXGroup;
+			children = (
+				493D48A923E8E8E400E48662 /* BeerListInteractor.swift */,
+			);
+			path = BussinessLogic;
+			sourceTree = "<group>";
+		};
+		493D488B23E8E4F600E48662 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				493D48AB23E8E8F300E48662 /* BeerListWorker.swift */,
+				493D48AD23E8FB0300E48662 /* ImageSupplyWorker.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		493D488C23E8E50700E48662 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				493D489523E8E71300E48662 /* BeerItem.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		493D489723E8E8C900E48662 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				493D489823E8E8C900E48662 /* ImageLoadingService.swift */,
+				493D489923E8E8C900E48662 /* NetworkManager.swift */,
+				493D48B123EADA1C00E48662 /* NetworkRequest.swift */,
+				493D489D23E8E8CA00E48662 /* NetworkAPI.swift */,
+				493D489F23E8E8CA00E48662 /* PunkAPIEndpoint.swift */,
+				493D489A23E8E8C900E48662 /* Requests */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		493D489A23E8E8C900E48662 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				493D489B23E8E8C900E48662 /* BeerListRequest.swift */,
+			);
+			path = Requests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,9 +293,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				493D489323E8E5C800E48662 /* BeerlistTableViewCell.xib in Resources */,
+				493D488723E8E49700E48662 /* Beerlist.storyboard in Resources */,
 				493D486623E8C77000E48662 /* LaunchScreen.storyboard in Resources */,
+				493D489123E8E5C800E48662 /* BeerlistLoaderTableViewCell.xib in Resources */,
 				493D486323E8C77000E48662 /* Assets.xcassets in Resources */,
-				493D485E23E8C76B00E48662 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,24 +308,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				493D485B23E8C76B00E48662 /* ViewController.swift in Sources */,
+				493D48A223E8E8CA00E48662 /* NetworkManager.swift in Sources */,
+				493D48B023E9AE9000E48662 /* URLComponents+QueryItems.swift in Sources */,
+				493D485B23E8C76B00E48662 /* BeerlistViewController.swift in Sources */,
+				493D48AC23E8E8F300E48662 /* BeerListWorker.swift in Sources */,
+				493D48A123E8E8CA00E48662 /* ImageLoadingService.swift in Sources */,
+				493D488423E8C93100E48662 /* ViewController+Storyboard.swift in Sources */,
+				493D488323E8C93100E48662 /* String+Extension.swift in Sources */,
+				493D489223E8E5C800E48662 /* BeerlistLoaderTableViewCell.swift in Sources */,
+				493D48AE23E8FB0300E48662 /* ImageSupplyWorker.swift in Sources */,
+				493D48AA23E8E8E400E48662 /* BeerListInteractor.swift in Sources */,
+				493D487F23E8C93100E48662 /* UITableViewCell+Nib.swift in Sources */,
+				493D489623E8E71300E48662 /* BeerItem.swift in Sources */,
+				493D488023E8C93100E48662 /* UIViewController+StandardError.swift in Sources */,
+				493D487C23E8C93100E48662 /* LoaderView.swift in Sources */,
+				493D487D23E8C93100E48662 /* Strings.swift in Sources */,
+				493D48A323E8E8CA00E48662 /* BeerListRequest.swift in Sources */,
+				493D488223E8C93100E48662 /* Storyboard.swift in Sources */,
+				493D488523E8C93100E48662 /* DataInteractable.swift in Sources */,
 				493D485723E8C76B00E48662 /* AppDelegate.swift in Sources */,
-				493D485923E8C76B00E48662 /* SceneDelegate.swift in Sources */,
 				493D486123E8C76B00E48662 /* Beerlist.xcdatamodeld in Sources */,
+				493D48A523E8E8CA00E48662 /* NetworkAPI.swift in Sources */,
+				493D489423E8E5C800E48662 /* BeerlistTableViewCell.swift in Sources */,
+				493D48A723E8E8CA00E48662 /* PunkAPIEndpoint.swift in Sources */,
+				493D487E23E8C93100E48662 /* Color.swift in Sources */,
+				493D48B223EADA1C00E48662 /* NetworkRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		493D485C23E8C76B00E48662 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				493D485D23E8C76B00E48662 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		493D486423E8C77000E48662 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
